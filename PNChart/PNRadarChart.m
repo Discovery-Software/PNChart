@@ -61,6 +61,7 @@
         _lengthUnit = 0;
         _chartPlot = [CAShapeLayer layer];
         _chartPlot.lineCap = kCALineCapButt;
+        _chartPlot.fillColor = _plotColor.CGColor;
         _chartPlot.lineWidth = 1.0;
         [self.layer addSublayer:_chartPlot];
         
@@ -201,8 +202,6 @@
     [plotline setLineCapStyle:kCGLineCapButt];
     
     _chartPlot.path = plotline.CGPath;
-    
-    _chartPlot.fillColor = _plotColor.CGColor;
 
     [self addAnimationIfNeeded];
     [self showGraduation];

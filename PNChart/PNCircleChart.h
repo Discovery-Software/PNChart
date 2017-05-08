@@ -70,5 +70,7 @@ displayCountingLabel:(BOOL)displayCountingLabel
 
 @property (nonatomic) BOOL displayCountingLabel;
 @property (nonatomic) BOOL displayAnimated;
+@property (nonatomic) BOOL displayAsPercentage;
+@property (strong, nonatomic) NSString *tailString;
 
 @end
